@@ -1,5 +1,7 @@
 # 個人ブログ
 
+https://m-bitterc2.github.io/personal-blogs/index.html
+
 ## サイトマップ
 
 ```mermaid
