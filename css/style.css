@@ -49,6 +49,7 @@ img {
   display: flex;
   text-align: center;
   gap: 20px;
+  padding: 0;
 }
 
 .page-title {
