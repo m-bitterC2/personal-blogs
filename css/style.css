@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/* 共通 */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic",
+    sans-serif;
+  line-height: 1.7; /* 行の高さの指定 */
+  color: #432;
+}
+
+a {
+  text-decoration: none; /* 傍線の指定 */
+  color: #432;
+}
+
+a:hover {
+  color: #0bd;
+}
+
+img {
+  max-width: 100%; /* 親要素よりも画像が大きくなることを防ぐ */
+}
+
+.title-font {
+  font-family: "Philosopher", sans-serif;
+  font-weight: normal;
+}
+
+/* ヘッダー */
+.page-header {
+  text-align: center;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  gap: 20px;
+}
+
+.page-title {
+  margin-bottom: 1rem;
+}
+
+/* ホームページ */
+.about {
+  max-width: 800px;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.about p {
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+/* Blogs */
+.about-blogs {
+  max-width: 800px;
+  text-align: center;
+  margin: 1.5rem;
+  border: 2px solid #c9c2bc;
+}
+
+.section-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.section-list li {
+  border-bottom: 1px solid #c9c2bc;
+}
+
+.section-list a {
+  font-size: 0.75rem;
+}
+
+.section-list p {
+  line-height: 2;
+}
+
+/* About */
+.profile {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 0 1rem;
+  border-spacing: 0; /* セル間の余白がなくなる */
+}
+
+.profile th,
+.profile td {
+  border-bottom: 1px solid #c9c2bc;
+}
+
+.profile th {
+  text-align: left; /* 左揃え */
+  font-weight: normal; /* 太字から細字に */
+  padding: 1rem;
+}
+
+.profile td {
+  padding: 1rem 0;
+}
+
+/* フッター */
+.copyright {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+/* デスクトップ版 */
+@media (min-width: 800px) {
+  .about,
+  .about-blogs {
+    margin: auto;
+  }
+
+  .section-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .section-list h4 {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .copyright {
+    padding: 2rem 0 1.5rem;
+  }
+}

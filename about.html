@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- セキュリティ対策用のMetaタグ -->
+    <!-- MIMEタイプのスニッフィング防止 -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <!-- クリックジャッキング対策 -->
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <!-- XSS攻撃防止 -->
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <!-- コンテンツセキュリティポリシー (CSP) の設定 -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+            default-src 'self';
+            style-src 'self' 'https://unpkg.com' 'https://fonts.googleapis.com';
+            font-src 'https://fonts.gstatic.com';
+        "
+    />
+    <title>Personal Blogs - About</title>
+    <!-- ファビコン -->
+    <link rel="icon" href="image/favicon.ico" />
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <!-- オリジナルCSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>
+        <a href="index.html">
+          <img class="logo" src="image/favicon.svg" alt="ロゴ" />
+        </a>
+      </h1>
+      <h2 class="page-title title-font">About</h2>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="about-blogs">
+      <h3 class="title-font">My Profile</h3>
+      <table class="profile">
+        <tr>
+          <th>Job</th>
+          <td>プログラマ</td>
+        </tr>
+        <tr>
+          <th rowspan="3">Skills</th>
+          <td>Java</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+        </tr>
+        <tr>
+          <td>TypeScript etc.</td>
+        </tr>
+      </table>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <small>&copy; 2024 m-bitterC2</small>
+      </div>
+    </footer>
+  </body>
+</html>
